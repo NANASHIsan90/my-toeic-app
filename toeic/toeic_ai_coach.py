@@ -121,9 +121,7 @@ else:
         st.markdown(f"**🎯 ターゲット分野:** `{q['category']}`")
         
         # 問題文をボックスで綺麗に表示
-        st.info(f"**Question:**
-
-{q['question']}")
+        st.info(f"**Question:**{q['question']}")
         
         # 選択肢のラジオボタン（初期状態は未選択）
         user_choice = st.radio("最も適切なものを1つ選んでください:", q['options'], index=None, key="toeic_radio")
