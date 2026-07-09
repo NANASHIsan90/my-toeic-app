@@ -85,7 +85,7 @@ def generate_question_from_gemini(api_key, weakness_report):
         '''
         
         # モデルの呼び出し（軽量・高速・低コストな gemini-1.5-flash を採用）
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         response = model.generate_content(
             prompt,
