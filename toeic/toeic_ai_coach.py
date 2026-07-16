@@ -79,7 +79,7 @@ def generate_question_from_gemini(api_key, weakness_report):
         4. explanationには、正解の理由と誤答の理由を「150文字以内で、極めて簡潔に」記述してください。
         '''
         
-        model = genai.GenerativeModel('gemini-1.5-pro')
+        model = genai.GenerativeModel('gemini-2.5-pro')
         
         response = model.generate_content(
             prompt,
